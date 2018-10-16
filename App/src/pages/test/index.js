@@ -281,6 +281,10 @@ class App extends Component{
         }
                 {
                     (this.state.quizSubmitted)?<div className='container-fluid'>
+                        <br/>
+                        <div className="col-lg-2 col-lg-offset-10">
+                            <input type='button' value='Logout' className='btn-lg btn-primary' onClick={()=>{localStorage.setItem('isAuthenticatedQuizUser','false');this.setState({isAuthenticatedQuizUser:'false'});window.location.replace('/login')}} />
+                        </div>
                         <div className='jumbotron row'>
                             <div className='col-lg-2'>
                             <h1 className='text-center'>Score</h1>
@@ -303,7 +307,7 @@ class App extends Component{
                                         <br/>
                                     <h4>Correct Answer: {sublist.correctAnswer}</h4>
                                         <br/>
-                                    <h4>You Marked Answer: {this.state.responses[index].optionsMarked}</h4>
+                                    <h4>You Marked: {this.state.responses[index].optionsMarked}</h4>
                                         <br/>
                                     </div>
                                 )

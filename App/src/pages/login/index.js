@@ -34,30 +34,30 @@ class App extends Component{
             <div className="container-fluid">
                 <br/>
                 <br/>
-                <div className="row col-lg-offset-4">
+                <div className="row col-lg-offset-4 col-md-offset-4 col-sm-offset-4">
                     <div>
-                        <label class="h3 col-form-label" htmlFor="username">
+                        <label className="h3 col-form-label" htmlFor="username">
                             Username:
                         </label>
-                        <div className="input-group col-lg-4">
+                        <div className="input-group col-lg-4 col-md-6 col-sm-8 col-sm-8">
                             <span className="input-group-addon"><i className="glyphicon glyphicon-user"></i></span>
                             <input type="text"  value={this.state.name} onChange={this.handleOnchangeUsername} className="form-control input-lg" id="username" required />
                         </div>
                     </div>
                 </div>
-                <div className="row col-lg-offset-4">
+                <div className="row col-lg-offset-4 col-md-offset-4 col-sm-offset-4">
                     <div>
-                        <label class="h3 col-form-label" htmlFor="password">
+                        <label className="h3 col-form-label" htmlFor="password">
                             Password:
                         </label>
-                        <div className="input-group col-lg-4">
+                        <div className="input-group col-lg-4 col-md-6 col-sm-8 col-sm-8">
                             <span className="input-group-addon"><i className="glyphicon glyphicon-lock"></i></span>
                             <input type="password" value={this.state.password} onChange={this.handleOnchangePassword} className="form-control input-lg" id="password" required />
                         </div>
                     </div>
                 </div>
                 <br/>
-                <div className="row col-lg-offset-5 col-sm-offset-3">
+                <div className="row col-lg-offset-5 col-md-offset-5 col-sm-offset-5">
                     <div>
                         <input type="submit" className="btn-lg rounded btn-primary" onClick={this.handleSubmit} value="submit" required />
                     </div>
