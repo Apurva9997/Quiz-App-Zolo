@@ -9,9 +9,13 @@
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
+    "jquery": "^3.3.1",
+    "jsdom": "^12.2.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "reactstrap": "^6.5.0",
+    "prop-types": "latest"
   },
   "keywords": [
     "gatsby"
@@ -24,7 +28,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "prop-types": "latest"
   },
   "repository": {
     "type": "git",
