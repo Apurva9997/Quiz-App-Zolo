@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="915b4de0-5094-430c-844d-04101a527fbb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/App/src/bootstrap/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/pages/login/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/pages/mui-button/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/pages/mui-button/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/pages/mui-button/Ripple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/pages/mui-button/Ripple.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/pages/test/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/pages/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/src/users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/pages/404.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/pages/page-2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/App/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/pages/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/pages/login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/pages/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/pages/test/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,10 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/src/pages/login/index.js">
+        <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="153">
+              <caret line="250" column="108" lean-forward="true" selection-start-line="250" selection-start-column="108" selection-end-line="250" selection-end-column="108" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -48,8 +35,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-339">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="329">
+              <caret line="27" column="209" lean-forward="true" selection-start-line="27" selection-start-column="209" selection-end-line="27" selection-end-column="243" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -58,13 +45,10 @@
         </entry>
       </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
+        <entry file="file://$PROJECT_DIR$/App/src/pages/login/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="128" column="40" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -86,13 +70,15 @@
       <list>
         <option value="$PROJECT_DIR$/App/gatsby-config.js" />
         <option value="$PROJECT_DIR$/App/src/bootsrap/bootstrap.css" />
-        <option value="$PROJECT_DIR$/App/src/pages/index.js" />
         <option value="$PROJECT_DIR$/App/src/pages/test/index.css" />
         <option value="$PROJECT_DIR$/App/src/components/RippleButton/index.js" />
         <option value="$PROJECT_DIR$/App/src/components/RippleButton/index.css" />
-        <option value="$PROJECT_DIR$/App/src/pages/test/index.js" />
         <option value="$PROJECT_DIR$/App/src/pages/mui-button/Button.css" />
+        <option value="$PROJECT_DIR$/App/src/users.json" />
         <option value="$PROJECT_DIR$/App/src/pages/login/index.js" />
+        <option value="$PROJECT_DIR$/App/src/pages/score/index.js" />
+        <option value="$PROJECT_DIR$/App/src/pages/index.js" />
+        <option value="$PROJECT_DIR$/App/src/pages/test/index.js" />
       </list>
     </option>
   </component>
@@ -126,8 +112,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,7 +164,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,7 +349,10 @@
       <workItem from="1539662939206" duration="1990000" />
       <workItem from="1539664957425" duration="198000" />
       <workItem from="1539668999462" duration="13582000" />
-      <workItem from="1539690854952" duration="7206000" />
+      <workItem from="1539690854952" duration="10258000" />
+      <workItem from="1539705416519" duration="1326000" />
+      <workItem from="1539706880636" duration="58000" />
+      <workItem from="1539706981942" duration="3808000" />
     </task>
     <task id="LOCAL-00001" summary="started project">
       <created>1539664752067</created>
@@ -372,11 +361,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539664752068</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added features, test page, login etc">
+      <created>1539698384497</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539698384497</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23553000" />
+    <option name="totallyTimeSpent" value="31797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -390,21 +386,21 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297414" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286638" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="npm" order="2" sideWeight="0.17817014" side_tool="true" visible="true" weight="0.25262576" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297414" />
+      <window_info id="npm" order="2" sideWeight="0.18298556" side_tool="true" visible="true" weight="0.25262576" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286638" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.82182986" visible="true" weight="0.25262576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.81701446" visible="true" weight="0.25262576" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -421,16 +417,45 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="started project" />
-    <option name="LAST_COMMIT_MESSAGE" value="started project" />
+    <MESSAGE value="added features, test page, login etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="added features, test page, login etc" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/pages/score/index.js" />
     <entry file="file://$PROJECT_DIR$/App/src/pages/login/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -468,13 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/components/layout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -493,30 +511,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/bootstrap/js/dropdown.js" />
     <entry file="file://$PROJECT_DIR$/App/src/bootstrap/js/bootstrap.min.js" />
-    <entry file="file://$PROJECT_DIR$/App/src/components/RippleButton/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/components/RippleButton/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/RippleButton/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/pages/mui-button/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/components/RippleButton/index.js" />
+    <entry file="file://$PROJECT_DIR$/App/src/components/RippleButton/index.css" />
+    <entry file="file://$PROJECT_DIR$/App/src/RippleButton/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/App/src/pages/mui-button/index.css" />
     <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1210">
@@ -524,13 +522,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/pages/mui-button/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/pages/mui-button/index.js" />
     <entry file="file://$PROJECT_DIR$/App/src/pages/mui-button/Button.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -538,13 +530,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/bootstrap/bootstrap.min.css">
+    <entry file="file://$PROJECT_DIR$/App/src/bootstrap/bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/users.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/pages/score/index.js" />
+    <entry file="file://$PROJECT_DIR$/App/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/pages/login/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-339">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="329">
+          <caret line="27" column="209" lean-forward="true" selection-start-line="27" selection-start-column="209" selection-end-line="27" selection-end-column="243" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -553,18 +564,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="128" column="40" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/pages/login/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="153">
+          <caret line="250" column="108" lean-forward="true" selection-start-line="250" selection-start-column="108" selection-end-line="250" selection-end-column="108" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

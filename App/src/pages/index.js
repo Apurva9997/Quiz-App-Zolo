@@ -4,11 +4,11 @@ import '../bootstrap/bootstrap.css'
 class App extends Component{
     constructor(props) {
         super(props)
-        if(localStorage.getItem('isAuthenticated')===undefined){
-            localStorage.setItem('isAuthenticated','false')
+        if(localStorage.getItem('isAuthenticatedQuizUser')===undefined){
+            localStorage.setItem('isAuthenticatedQuizUser','false')
         }
         this.state = {
-            isAuthenticated: localStorage.getItem('isAuthenticated'),
+            isAuthenticatedQuizUser: localStorage.getItem('isAuthenticatedQuizUser'),
             isTimerStarted:false,
             timeRemaining:'3:00',
             no_of_questions:3,
@@ -16,14 +16,17 @@ class App extends Component{
         }
     }
     componentWillMount(){
-        /*if(this.state.isAuthenticated==='false'){
+        if(this.state.isAuthenticatedQuizUser==='false'){
             window.location.replace('/login')
-        }*/
+        }
     }
     render(){
         return(
             <div className="container-fluid">
                 <div className="row">
+                    <div className="col-lg-2">
+                        <input type='button' value='Logout' className='btn-lg btn-primary' onClick={()=>{localStorage.setItem('isAuthenticatedQuizUser','false');this.setState({isAuthenticatedQuizUser:'false'});window.location.replace('/login')}} />
+                    </div>
                     <div className="col-lg-2 col-lg-offset-10">
                         <h3><i className="glyphicon glyphicon-time"></i>Time Remaining</h3>
                         <h3 className="float-left">
@@ -40,7 +43,7 @@ class App extends Component{
                     <p className="h4">3. Each question will have four options.</p>
                     <p className="h4">4. You are required to choose from one correct option.</p>
                     <hr/>
-                    <input type="button" value="Start Test" className="h4 btn-lg btn-primary rounded col-lg-offset-5" />
+                    <input type="button" value="Start Test" onClick={()=>{window.location.replace('/test')}} className="h4 btn-lg btn-primary rounded col-lg-offset-5" />
                 </div>
             </div>
         )
