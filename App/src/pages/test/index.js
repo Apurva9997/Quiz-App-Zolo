@@ -87,7 +87,6 @@ class App extends Component{
     handleSubmitQuiz =()=>{
         if(this.state.responseTemp===this.state.questions[this.state.currentquestion].correctAnswer)
         {
-            this.setState({score:this.state.score+1})
             let newObj = {
                 optionsMarked:this.state.responseTemp,
                 attemptSuccess:true,
@@ -156,6 +155,7 @@ class App extends Component{
             }
             if(this.state.minutes==0 && this.state.seconds==0){
                 clearInterval(this.timer)
+                this.handleSubmitQuiz()
             }
             if(this.state.seconds>0){
                 this.setState({seconds:this.state.seconds-1})
@@ -248,9 +248,19 @@ class App extends Component{
                             <h1 className='text-center'>{this.state.score}</h1>
                             <br/>
                             <div className='col-lg-offset-4'>
-                            <Pie options={this.state.options} data={this.state.data} height={640} width={480} />
+                                <Pie options={this.state.options} data={this.state.data} height={640} width={480} />
                             </div>
-                        </div>
+                            {
+                                this.state.questions.map((index,obj)=>{
+                                    return(
+                                        <div>
+                                            <h3>{index}{obj.question}</h3>
+                                            <h3>Correct Answer: {obj.correctAnswer}</h3>
+                                        </div>
+                                    )
+                                })
+                            }
+                    </div>
                     </div>:null
                 }
             </div>
