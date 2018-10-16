@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="915b4de0-5094-430c-844d-04101a527fbb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/App/src/users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/pages/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/pages/login/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/pages/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/pages/test/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +18,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="250" column="108" lean-forward="true" selection-start-line="250" selection-start-column="108" selection-end-line="250" selection-end-column="108" />
+            <state relative-caret-position="308">
+              <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -352,7 +347,7 @@
       <workItem from="1539690854952" duration="10258000" />
       <workItem from="1539705416519" duration="1326000" />
       <workItem from="1539706880636" duration="58000" />
-      <workItem from="1539706981942" duration="3808000" />
+      <workItem from="1539706981942" duration="6932000" />
     </task>
     <task id="LOCAL-00001" summary="started project">
       <created>1539664752067</created>
@@ -368,11 +363,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539698384497</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added features, test page, login etc">
+      <created>1539710884615</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539710884616</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added features, test page, login etc">
+      <created>1539712388137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539712388137</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31797000" />
+    <option name="totallyTimeSpent" value="34921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -564,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="250" column="108" lean-forward="true" selection-start-line="250" selection-start-column="108" selection-end-line="250" selection-end-column="108" />
+        <state relative-caret-position="308">
+          <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

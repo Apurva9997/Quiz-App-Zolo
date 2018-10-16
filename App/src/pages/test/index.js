@@ -64,6 +64,9 @@ class App extends Component{
             dropdownOpen: !this.state.dropdownOpen
         });
     }
+    componentWillUnmount(){
+
+    }
     handleSubmitAnswer =()=>{
         if(this.state.responseTemp===this.state.questions[this.state.currentquestion].correctAnswer)
         {
@@ -91,49 +94,85 @@ class App extends Component{
                 optionsMarked:this.state.responseTemp,
                 attemptSuccess:true,
             }
-            this.setState({score:this.state.score+1,responses:[...this.state.responses,newObj]})
+            this.setState({score:this.state.score+1,responses:[...this.state.responses,newObj]},
+                ()=>{
+                    this.setState({
+                        data : {
+                            labels: [
+                                'Correct',
+                                'Incorrect',
+                            ],
+                            datasets: [{
+                                data: [
+                                    this.state.score,
+                                    this.state.no_of_questions-this.state.score,
+                                ],
+                                backgroundColor: [
+                                    '#FF6384',
+                                    '#36A2EB',
+                                ],
+                                hoverBackgroundColor: [
+                                    '#FF6384',
+                                    '#36A2EB',
+                                ]
+                            }]
+                        },
+
+                        options : {
+                            maintainAspectRatio: false,
+                            responsive: false,
+                            legend: {
+                                position: 'left',
+                                labels: {
+                                    boxWidth: 10
+                                }
+                            }
+                        },})
+                })
         }
         else{
             let newObj = {
                 optionsMarked:this.state.responseTemp,
                 attemptSuccess:false,
             }
-            this.setState({responses:[...this.state.responses,newObj]})
+            this.setState({responses:[...this.state.responses,newObj]},
+                ()=>{
+                    this.setState({
+                        data : {
+                            labels: [
+                                'Correct',
+                                'Incorrect',
+                            ],
+                            datasets: [{
+                                data: [
+                                    this.state.score,
+                                    this.state.no_of_questions-this.state.score,
+                                ],
+                                backgroundColor: [
+                                    '#FF6384',
+                                    '#36A2EB',
+                                ],
+                                hoverBackgroundColor: [
+                                    '#FF6384',
+                                    '#36A2EB',
+                                ]
+                            }]
+                        },
+
+                        options : {
+                            maintainAspectRatio: false,
+                            responsive: false,
+                            legend: {
+                                position: 'left',
+                                labels: {
+                                    boxWidth: 10
+                                }
+                            }
+                        },})
+                })
         }
         clearInterval(this.timer)
-        this.setState({
-            data : {
-                labels: [
-                    'Correct',
-                    'Incorrect',
-                ],
-                datasets: [{
-                    data: [
-                        this.state.score,
-                        this.state.no_of_questions-this.state.score,
-                    ],
-                    backgroundColor: [
-                        '#FF6384',
-                        '#36A2EB',
-                    ],
-                    hoverBackgroundColor: [
-                        '#FF6384',
-                        '#36A2EB',
-                    ]
-                }]
-            },
-
-            options : {
-                maintainAspectRatio: false,
-                responsive: false,
-                legend: {
-                    position: 'left',
-                    labels: {
-                        boxWidth: 10
-                    }
-                }
-            },
-            quizSubmitted:true})
+        this.setState({quizSubmitted:true})
     }
     checkAnswer =(e)=>{
         let itemval=e.target.value
@@ -242,25 +281,34 @@ class App extends Component{
         }
                 {
                     (this.state.quizSubmitted)?<div className='container-fluid'>
-                        <div className='jumbotron'>
+                        <div className='jumbotron row'>
+                            <div className='col-lg-2'>
                             <h1 className='text-center'>Score</h1>
                             <br/>
                             <h1 className='text-center'>{this.state.score}</h1>
-                            <br/>
-                            <div className='col-lg-offset-4'>
-                                <Pie options={this.state.options} data={this.state.data} height={640} width={480} />
                             </div>
-                            {
-                                this.state.questions.map((index,obj)=>{
-                                    return(
-                                        <div>
-                                            <h3>{index}{obj.question}</h3>
-                                            <h3>Correct Answer: {obj.correctAnswer}</h3>
-                                        </div>
-                                    )
-                                })
-                            }
+                            <div className='col-lg-4 col-lg-offset-4'>
+                                <Pie data={this.state.data} options={this.state.options} />
+                            </div>
                     </div>
+                    </div>:null
+                }
+                {   (this.state.quizSubmitted)?
+                    <div>
+                        {
+                            this.state.questions.map((sublist, index) => {
+                                return (
+                                    <div className='text-center'>
+                                    <h3>{index+1}. {sublist.question}</h3>
+                                        <br/>
+                                    <h4>Correct Answer: {sublist.correctAnswer}</h4>
+                                        <br/>
+                                    <h4>You Marked Answer: {this.state.responses[index].optionsMarked}</h4>
+                                        <br/>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>:null
                 }
             </div>
