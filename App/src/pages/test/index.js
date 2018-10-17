@@ -3,6 +3,8 @@ import '../../bootstrap/bootstrap.css'
 import './index.css'
 import Button from '../mui-button/Button'
 import { Pie } from 'react-chartjs-2'
+import correct from '../../assets/correct.gif'
+import incorrect from '../../assets/incorrect.gif'
 
 class App extends Component{
     constructor(props) {
@@ -13,7 +15,7 @@ class App extends Component{
         this.state = {
             isAuthenticatedQuizUser: localStorage.getItem('isAuthenticatedQuizUser'),
             isTimerStarted: false,
-            no_of_questions: 3,
+            no_of_questions: 6,
             minutes: 3,
             x: 0,
             seconds: 0,
@@ -49,6 +51,30 @@ class App extends Component{
                     optionC: '51462',
                     optionD: '15264',
                     correctAnswer: '15264',
+                },
+                {
+                    question: 'Which truck is produced by the Ford Motor Company?',
+                    optionA: 'RAV4',
+                    optionB: 'Silverado 1500',
+                    optionC: 'CR-V',
+                    optionD: 'F-150',
+                    correctAnswer: 'F-150',
+                },
+                {
+                    question: 'What temperature is the same in Celsius and Fahrenheit?',
+                    optionA: '0&deg',
+                    optionB: '+40&deg',
+                    optionC: '-40&deg',
+                    optionD: '+100&deg',
+                    correctAnswer: '-40&deg',
+                },
+                {
+                    question: 'Which of these antagonist characters was created by novelist J.K. Rowling?',
+                    optionA: 'Professor Moriaty',
+                    optionB: 'Lord Vordemort',
+                    optionC: 'Lord Farqaad',
+                    optionD: 'Darth Valder',
+                    correctAnswer: 'Lord Vordemort',
                 }
             ],
             responses:[
@@ -58,6 +84,10 @@ class App extends Component{
         //let timearray = this.state.timeRemaining.split(":")
         //this.setState({minutes:,seconds:parseInt(timearray[1])})
         this.timer = null;
+        this.correct = false;
+        this.incorrect = false;
+        this.timer2 = null;
+        this.animationTime = 0;
     }
     toggle() {
         this.setState({
@@ -70,6 +100,7 @@ class App extends Component{
     handleSubmitAnswer =()=>{
         if(this.state.responseTemp===this.state.questions[this.state.currentquestion].correctAnswer)
         {
+            this.correct = true
             let newObj = {
                 optionsMarked:this.state.responseTemp,
                 attemptSuccess:true,
@@ -77,6 +108,7 @@ class App extends Component{
             this.setState({score:this.state.score+1,responses:[...this.state.responses,newObj]})
         }
         else{
+            this.incorrect = true
             let newObj = {
                 optionsMarked:this.state.responseTemp,
                 attemptSuccess:false,
@@ -86,6 +118,19 @@ class App extends Component{
         if(this.state.currentquestion<this.state.no_of_questions-1) {
             this.setState({currentquestion: this.state.currentquestion + 1})
         }
+        this.timer2 = setInterval(()=>{
+            if(this.animationTime<1) {
+                this.incorrect = false
+                this.correct = false
+            }
+            else{
+                clearInterval(this.timer2)
+                this.animationTime = 0
+                this.incorrect = false
+                this.correct = false
+            }
+            this.animationTime = this.animationTime+1
+        },1000)
     }
     handleSubmitQuiz =()=>{
         if(this.state.responseTemp===this.state.questions[this.state.currentquestion].correctAnswer)
@@ -274,6 +319,14 @@ class App extends Component{
                         >
                             {`Submit Quiz`}
                         </Button> : null
+                    }
+                    {(this.correct) ?
+                        <img src={correct} height={40} width={40}
+                             style={{marginTop: '-40px', marginLeft: '20px'}}/> : null
+                    }
+                    {(this.incorrect) ?
+                        <img src={incorrect} height={40} width={40}
+                             style={{marginTop: '-40px', marginLeft: '20px'}}/> : null
                     }
                 </div>
             </div>

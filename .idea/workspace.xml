@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="915b4de0-5094-430c-844d-04101a527fbb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/App/src/assets/correct.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/src/assets/incorrect.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/pages/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/pages/test/index.js" afterDir="false" />
     </list>
@@ -18,8 +20,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            <state relative-caret-position="-1078">
+              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -30,8 +32,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="27" column="209" lean-forward="true" selection-start-line="27" selection-start-column="209" selection-end-line="27" selection-end-column="243" />
+            <state relative-caret-position="572">
+              <caret line="27" column="209" selection-start-line="27" selection-start-column="209" selection-end-line="27" selection-end-column="243" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -42,8 +44,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/pages/login/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="748">
+              <caret line="36" column="83" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -70,9 +72,9 @@
         <option value="$PROJECT_DIR$/App/src/components/RippleButton/index.css" />
         <option value="$PROJECT_DIR$/App/src/pages/mui-button/Button.css" />
         <option value="$PROJECT_DIR$/App/src/users.json" />
-        <option value="$PROJECT_DIR$/App/src/pages/login/index.js" />
         <option value="$PROJECT_DIR$/App/src/pages/score/index.js" />
         <option value="$PROJECT_DIR$/App/src/pages/index.js" />
+        <option value="$PROJECT_DIR$/App/src/pages/login/index.js" />
         <option value="$PROJECT_DIR$/App/src/pages/test/index.js" />
       </list>
     </option>
@@ -107,9 +109,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,6 +123,12 @@
               <item name="zolo-quiz-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zolo-quiz-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zolo-quiz-app" type="b2602c69:ProjectViewProjectNode" />
@@ -164,7 +172,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/react-scratch-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -182,11 +190,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/App/src/assets" />
       <recent name="$PROJECT_DIR$/App/src/bootstrap" />
       <recent name="$PROJECT_DIR$/App/src/pages" />
       <recent name="$PROJECT_DIR$/App/src" />
       <recent name="$PROJECT_DIR$/App/src/bootstrap/js" />
-      <recent name="$PROJECT_DIR$/App/src/bootsrap" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -242,6 +250,15 @@
       <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/App/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
     </configuration>
     <configuration name="develop" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/App/package.json" />
@@ -322,10 +339,12 @@
     <list>
       <item itemvalue="npm.format" />
       <item itemvalue="npm.develop" />
+      <item itemvalue="npm.build" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.develop" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.format" />
       </list>
     </recent_temporary>
@@ -347,7 +366,8 @@
       <workItem from="1539690854952" duration="10258000" />
       <workItem from="1539705416519" duration="1326000" />
       <workItem from="1539706880636" duration="58000" />
-      <workItem from="1539706981942" duration="6932000" />
+      <workItem from="1539706981942" duration="9188000" />
+      <workItem from="1539759296129" duration="3723000" />
     </task>
     <task id="LOCAL-00001" summary="started project">
       <created>1539664752067</created>
@@ -377,14 +397,28 @@
       <option name="project" value="LOCAL" />
       <updated>1539712388137</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added features, test page, login etc">
+      <created>1539713946512</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539713946512</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added features, test page, login etc">
+      <created>1539716949034</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1539716949034</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34921000" />
+    <option name="totallyTimeSpent" value="40900000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -395,21 +429,21 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23275863" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297414" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286638" />
-      <window_info id="npm" order="2" sideWeight="0.18298556" side_tool="true" visible="true" weight="0.25262576" />
+      <window_info id="npm" order="2" sideWeight="0.18539326" side_tool="true" visible="true" weight="0.25538972" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286638" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.81701446" visible="true" weight="0.25262576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8146067" visible="true" weight="0.25538972" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -430,6 +464,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="added features, test page, login etc" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2530">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="27" column="209" selection-start-line="27" selection-start-column="209" selection-end-line="27" selection-end-column="243" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/pages/login/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="36" column="83" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -556,15 +617,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/pages/login/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="748">
+          <caret line="36" column="83" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="27" column="209" lean-forward="true" selection-start-line="27" selection-start-column="209" selection-end-line="27" selection-end-column="243" />
+        <state relative-caret-position="572">
+          <caret line="27" column="209" selection-start-line="27" selection-start-column="209" selection-end-line="27" selection-end-column="243" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -573,8 +634,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/pages/test/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        <state relative-caret-position="-1078">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
