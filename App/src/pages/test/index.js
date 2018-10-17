@@ -16,7 +16,7 @@ class App extends Component{
             isAuthenticatedQuizUser: localStorage.getItem('isAuthenticatedQuizUser'),
             isTimerStarted: false,
             no_of_questions: 6,
-            minutes: 3,
+            minutes: 1,
             x: 0,
             seconds: 0,
             score: 0,
@@ -80,9 +80,6 @@ class App extends Component{
             responses:[
             ],
         }
-        this.toggle = this.toggle.bind(this);
-        //let timearray = this.state.timeRemaining.split(":")
-        //this.setState({minutes:,seconds:parseInt(timearray[1])})
         this.timer = null;
         this.correct = false;
         this.incorrect = false;
@@ -360,7 +357,9 @@ class App extends Component{
                                         <br/>
                                     <h4>Correct Answer: {sublist.correctAnswer}</h4>
                                         <br/>
-                                    <h4>You Marked: {this.state.responses[index].optionsMarked}</h4>
+                                        {(this.state.responses[index]!==undefined)?
+                                            <h4>You Marked: {this.state.responses[index].optionsMarked}</h4>:<h4>You Marked: None</h4>
+                                        }
                                         <br/>
                                     </div>
                                 )
